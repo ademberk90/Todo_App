@@ -1,0 +1,134 @@
+.spinner-row{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #f8f8f8ad;
+  z-index: 1000;
+}
+
+.spinner-row .spinner-border{
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.container {
+  max-width: 550px !important;
+  margin: 40px auto;
+}
+
+.theme-button:hover{
+    cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header svg {
+  color: #1c7ed6;
+}
+
+button svg {
+  vertical-align: text-bottom;
+}
+
+.new-task-row {
+  justify-content: flex-end;
+  margin-top: 1rem !important;
+}
+
+.new-task-row button {
+  max-width: 170px;
+}
+
+.new-task-row button label {
+  padding-left: 0.5rem;
+}
+
+.card {
+  background-color: var(--card-bg) !important;
+}
+.card, .paging-row {
+  margin-top: 0.6rem !important;
+}
+
+.card-title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title .delete-button{
+  color:#f03e3e;
+}
+
+.card-title .update-button{
+  color:#1c7ed6;
+  margin-right: 0.6rem;
+}
+.card-title .check-button{
+  color :#40bf73;
+  margin-bottom: 0.5rem;
+}
+
+.card-title svg:hover:not(.check-button){
+  cursor: pointer;
+}
+
+.paging-row .pagination{
+  justify-content: flex-end;
+}
+
+/* colors */
+.modal-content{
+  background-color: var(--card-bg) !important;
+}
+
+.modal-body textarea, .modal-content .form-element, .modal-content .form-element input{
+  background-color: var(--modal-input-bg) !important;
+  border-color: var(--border) !important;
+}
+.modal-footer{
+  border-top: 1px solid var(--border) !important;
+}
+.modal-header{
+  border-bottom: 1px solid var(--border) !important;
+}
+.form-control{
+  color:var(--bs-body-color) !important;
+}
+.pagination li a{
+  background-color: var(--card-bg) !important;
+  color:var(--color-pg) !important;
+  border-color: var(--border-pg) !important;
+}
+
+
+#light{
+  --bs-body-bg: #fff;
+
+  --card-bg: #fff;
+  --modal-input-bg: #fff;
+  --border-pg: #dee2e6;
+  --color-pg : #0d6efd;
+}
+
+#dark{
+  --bs-body-bg: #1a1b1e;   
+  --bs-body-color:#c1c2c5;
+
+  /* custom variables*/
+  --card-bg: #25262b;
+  --modal-input-bg: #2c2e33;
+  --border: #515c68;
+  --border-pg: #515c68;
+  --color-pg : #c1c2c5;
+}
