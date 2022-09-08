@@ -234,7 +234,7 @@ function App() {
         <Row>
           {tasks.map((task, index) => {
             return (
-              <Task
+              <Task key={task.id}
                 task={task}
                 deleteTask={deleteTask}
                 updateTaskHandleClick={updateTaskHandleClick}
